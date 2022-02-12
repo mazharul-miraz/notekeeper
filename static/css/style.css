@@ -1,4 +1,6 @@
 
+*{padding: 0px;margin: 0px;
+    }
 body{
     background-color: #202124;
     color: #fff;
@@ -11,15 +13,18 @@ body{
     width: 960px;
 }
 
-.note-block{
-    border: 1px solid #5f6368;
+
+.app-heading {
+    color: #feca12;
+    margin: 10px 0;
 }
+
 
 /* // Minimal Form Generic: Resets */
 input, select, textarea {
 	display: block;
 	box-sizing: border-box;
-	width: 20%;
+	width: 30%;
 	outline: none;
 	border: none;
 	border-radius: 0;
@@ -54,7 +59,32 @@ input {
 }
 
 
-.show-note{
-    border: 1px solid #5f6368;
+.note-block {
+    border-bottom: 1px solid #5f6368;
+    padding-bottom: 33px;
+}
 
+
+.show-note{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+
+.note-card {
+    width: 150px;
+    padding: 8px 12px;
+    margin: 5px;
+    border: 1px solid #5f6368;
+    cursor: pointer;
+}
+
+.submit-btn {
+    box-shadow: 0 1px 3px rgb(23 23 23 / 24%);
+    background-color: #feca12;
+    border: 1px solid #5f6368;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
 }
