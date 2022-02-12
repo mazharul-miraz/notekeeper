@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from httpx import request
+from urllib import request
 
 # Create your views here.
 
-def home(requuest):
+def home(request):
     return render(request,"index.html")
