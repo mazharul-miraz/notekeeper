@@ -6,5 +6,5 @@ class noteForm(forms.ModelForm):
     # note_content=forms.CharField(max_length=150)
     
     class Meta:
-    model = noteModel
-    fields = "__all__"
+        model = noteModel
+        fields = "__all__"
