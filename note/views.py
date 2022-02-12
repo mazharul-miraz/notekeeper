@@ -5,3 +5,13 @@ from urllib import request
 
 def home(request):
     return render(request,"index.html")
+
+
+def noteView(request):
+    return render(request,"index.html")
+
+def addNote():
+    return render(request,"")
+
+def delNote():
+    return render(request,"")
