@@ -8,48 +8,22 @@
     <h2 class="app-heading">Wellcome To Note Keeping Application</h2>
 
     <div class ="note-block">
-        <label for="note-title">Title</label></br>
-        <input type="text" name="note-title"></br>
+        <label for="note_title">Title</label></br>
+        <input type="text" name="note_title"></br>
         
-        <label for="note-text">Note</label></br>
-        <textarea class="note-text" name="note" rows="4" cols="60"></textarea></br>
+        <label for="note_content">Note</label></br>
+        <textarea class="note-text" name="note_content" rows="4" cols="60"></textarea></br>
         <input type="submit" value="submit" class="submit-btn">
     </div>
 
     <div class="show-note">
+        {% for notes in all_notes %}
         <div class="note-card">
-            <h4>Note title</h4>
-            <p>Im note content</p>
+            <h4>{{ notes.note_title }}</h4>
+            <p>{{ notes.note_content }}</p>
         </div>
-        <div class="note-card">
-            <h4>Note title</h4>
-            <p>Im note content</p>
-        </div>
-        <div class="note-card">
-            <h4>Note title</h4>
-            <p>Im note content</p>
-        </div>
-        <div class="note-card">
-            <h4>Note title</h4>
-            <p>Im note content</p>
-        </div>
-
-        <div class="note-card">
-            <h4>Note title</h4>
-            <p>Im note content</p>
-        </div>
-        <div class="note-card">
-            <h4>Note title</h4>
-            <p>Im note content</p>
-        </div>
-        <div class="note-card">
-            <h4>Note title</h4>
-            <p>Im note content</p>
-        </div>
-
-
+        {% endfor %}
     </div>
-
 
 </div>
 {% endblock content %}
