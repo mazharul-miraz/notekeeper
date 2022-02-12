@@ -12,5 +12,43 @@ body{
 }
 
 .note-block{
+    border: 1px solid #5f6368;
+}
 
+/* // Minimal Form Generic: Resets */
+input, select, textarea {
+	display: block;
+	box-sizing: border-box;
+	width: 20%;
+	outline: none;
+	border: none;
+	border-radius: 0;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+    background-color: #313235;
+    color: #fff;
+}
+
+
+
+label {
+	display: block;
+	margin-bottom: 0.25em;
+}
+
+input {
+	padding: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: lightgray;
+    color: #fff;
+	background-color: #313235;
+	&:focus {
+		border-color: gray;
+	}
+
+	&::placeholder {
+		color: #fff;
+	}
 }
