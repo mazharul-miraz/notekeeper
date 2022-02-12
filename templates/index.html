@@ -8,12 +8,15 @@
     <h2 class="app-heading">Wellcome To Note Keeping Application</h2>
 
     <div class ="note-block">
+        <form action="/addnote/" method="POST">
+            {% csrf_token %}
         <label for="note_title">Title</label></br>
         <input type="text" name="note_title"></br>
         
         <label for="note_content">Note</label></br>
         <textarea class="note-text" name="note_content" rows="4" cols="60"></textarea></br>
         <input type="submit" value="submit" class="submit-btn">
+        </form>
     </div>
 
     <div class="show-note">
